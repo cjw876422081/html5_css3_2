@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+    <form>
+        点击下面的按钮，把文本框1的内容拷贝到文本框2中:<br>
+        文本框1:<input type="text" id="text1" value="点击下复制我"><br>
+        文本框1:<input type="text" id="text2" value="点击下面复制我"><br>
+        <input type="button" name="but" value="点击我" onclick=
+                "document.getElementById('text2').value =document.getElementById('text1').value ;
+                document.getElementById('text1').value= null ">
+    </form>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息反馈表</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>用户信息反馈表</h1>
+        <form  action="" method="post" id="feedback" name="feedback">
+            <!--jibenxinxi-->
+            <fieldset>
+                <legend>基本信息</legend>
+                <ul>
+                    <li><label for="username"> 用户名</label>
+                        <input type="text" id="username" name="usernaem" class=" large"
+                               requiredplaceholder="请输入你的用户名">
+                    </li>
+                    <li>
+                        <label>性别:</label>
+                        <fieldset class="radios">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="gender_male" name="gender" value="male">
+                                    <label for="gender_male"> 男</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="gender_female" name="gender" value="female">
+                                    <label for="gender_female"> 女</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="age">年龄:</label>
+                        <input name="age" type="text"  id="age" class="large">
+                    </li>
+                    <li>
+                        <label for="vocation">职业:</label>
+                        <input name="vocation" type="text"  id="vocation" class="large">
+                    </li>
+                </ul>
+            </fieldset>
+            <!--基本信息结束-->
+            <!--联系方式-->
+            <fieldset>
+                <legend>联系方式</legend>
+                <ul>
+                    <li>
+                        <label for="telephone">电话号码</label>
+                        <input type="tel" id="telephone" name="telephone" class="large">
+                    </li>
+                    <li>
+                        <label for="email">电子邮箱</label>
+                        <input type="email" id="email" name="telephone" class="large">
+                    </li>
+                    <li>
+                        <label for="country">国家:</label>
+                        <select name="country" class="small" id="country" >
+                            <option value="China">中国</option>
+                            <option value="American">美国</option>
+                            <option value="German">德国</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <!--联系方式结束-->
+            <!--客户体验-->
+            <fieldset>
+                <legend>客户体验</legend>
+                <ul>
+                    <li>
+                        <label>卫生状况:</label>
+                        <fieldset class="radios">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="clean1" name="gender" value="   very  good">
+                                    <label for="clean1" >非常好</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="clean2" name="gender" value="   good">
+                                    <label for="clean2" >好</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="clean3" name="gender" value="  common">
+                                    <label for="clean3" >一般</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="clean4" name="gender" value="   bad ">
+                                    <label for="clean4" >差</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label>了解途径:</label>
+                        <fieldset class="radios">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="way1" name="way" value="friend">
+                                    <label for="way1">朋友介绍</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="way2" name="way" value="advert">
+                                    <label for="way2">广告单</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="way3" name="way" value="tv">
+                                    <label for="way3">电视宣传</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="way4" name="way" value="other">
+                                    <label for="way4">其他</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="view"> 建议或意见</label>
+                        <textarea id ="view" name="view" rows="4" cols="90" class="large"> </textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <!--用户体验结束-->
+            <fieldset>
+                <ul class="checkboxes">
+                    <li>
+                        <input type="checkbox" id="email_ok_msg_from_users" name="email_signup" value="user_emails">
+                        <label for="email_ok_msg_from_users">恳请接受来自其他用户的信息</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="feedalign">
+                <input type="submit" class="feedback" value="确认提交">
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
